@@ -1,0 +1,117 @@
+body {
+    background-color: rgba(0, 255, 200, 0.683);
+    color: rgb(250, 244, 244);
+}
+
+.caja_login {
+    background-color: rgba(14, 119, 122, 0.925);
+    position: relative;
+    margin: 10% 10% 10% 10%;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.2); /* Aquí se añade la sombra */
+}
+
+.contenido_login, p {
+    position: absolute;
+    top: 30%;  /* Posición superior (Y) */
+    left: 50%; /* Posición izquierda (X) */
+    transform: translate(-50%, -50%); /* Para centrar completamente */
+    text-align: center; /* Centrar el texto dentro del contenido */
+    color: white;
+}
+
+
+div.titulo_login {
+    color: black;
+   position: absolute;
+   top: 30%;
+   left: 50%;
+}
+
+input[type=email] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: absolute;
+    top: 45%;  /* Posición superior (Y) */
+    left: 50%; /* Posición izquierda (X) */
+    transform: translate(-50%, -50%);
+    
+  }
+
+label[for=user_name] {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+input[type=password] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: absolute;
+    top: 85%;  /* Posición superior (Y) */
+    left: 50%; /* Posición izquierda (X) */
+    transform: translate(-50%, -50%);
+  }
+  
+  label[for=password_user] {
+
+  }
+
+button {
+    position: absolute;
+    top: 100%;
+    left: -22%;
+    width: 200px ;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+/* estilos para la pagina usuario */
+
+.contenido_usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.casilla_usuario {
+    background-color: black;
+    color: azure;
+    margin: 15% 10% 10% 15%;
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.titulo_casilla_usuario, .parrafo_casilla_usuario {
+    position: absolute;
+    margin: 0;
+    color: white;
+}
+
+.titulo_casilla_usuario {
+    top: 40px;  /* Ajusta la posición superior */
+    left: 40%; /* Ajusta la posición izquierda */
+}
+
+.parrafo_casilla_usuario {
+    bottom: 40%; /* Ajusta la posición inferior */
+    left: 46%; /* Ajusta la posición derecha */
+}
+
