@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de dados</title>
+    <Script src="/ejercicio 8_dados/dados.js"></Script>
+</head>
+<body>
+    <h3>Bienvenido añ juego de los DADOS del SENA</h3><br><br>
+    <ul><strong>Reglas del juego:</strong><br><br>
+        <li>Solo se gana si la suma de los dos dados es de 7, ganará 5 puntos y 
+            ganara $10000.</li>
+        <li>Si en el lanzamiento de los dados ambos numeros son pares solo tendrá 3 
+            puntos y ganará $5000.</li>
+        <li>Solo tiene 5 intentos, si de los 5 no saca ningun numero mayor a 7 o par, 
+            perderá la partida.</li>
+        <li>Si la suma de ambos dados es menor a 7 perderá $1000 por intento</li>
+
+    </ul>
+    <label for="dado 1.">Dado 1.</label><br>
+    <input type="text" id="dado_1"><br><br>
+    <label for="dado 2">Dado 2.</label><br>
+    <input type="text" id="dado_2"><br><br>
+    <button onclick="verificar_apuesta()">Verifcar</button><br><br>
+    <textarea name="resultado" id="resultado" rows="5" cols="40"></textarea>
+
+
+    
+</body>
+</html>
