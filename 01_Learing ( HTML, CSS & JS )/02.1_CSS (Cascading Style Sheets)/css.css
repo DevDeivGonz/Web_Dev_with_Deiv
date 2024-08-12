@@ -1,0 +1,13 @@
+body{
+background-color: black;
+color: white;
+}
+
+.casilla_login {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border-radius: 1%;
+    margin: 10% 10% 10% 10%;
+    
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Esto es un input y como usar botones de seleccion multiple</h1>
+    <form action="/">
+        <label for="nombre" id="primer_nombre">Ingrese su primer nombre</label>
+        <input type="text" id="texto">
+    </form>
+    <form>
+        <! Casillas Desplegables (Selectores) >
+        <label for="fruit">Choose a fruit:</label>
+        <select id="fruit" name="fruit">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="cherry">Cherry</option>
+        </select>
+      </form>
+      <br><br>
+      <form>
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+      </form>
+      <br><br>
+      <form>
+        <p>Select one option:</p>
+        <label>
+          <input type="radio" name="option" value="option1"> Option 1
+        </label><br>
+        <label>
+          <input type="radio" name="option" value="option2"> Option 2
+        </label><br>
+        <label>
+          <input type="radio" name="option" value="option3"> Option 3
+        </label>
+      </form>
+        <br><br>
+        <form>
+            <p>Select multiple options:</p>
+            <label>
+              <input type="checkbox" name="option" value="option1"> Option 1
+            </label><br>
+            <label>
+              <input type="checkbox" name="option" value="option2"> Option 2
+            </label><br>
+            <label>
+              <input type="checkbox" name="option" value="option3"> Option 3
+            </label>
+          </form>
+          <br><br>
+          <form action="/submit" method="post">
+            <p>Select your favorite fruits:</p>
+            <label>
+              <input type="checkbox" name="fruits" value="apple"> Apple
+            </label><br>
+            <label>
+              <input type="checkbox" name="fruits" value="banana"> Banana
+            </label><br>
+            <label>
+              <input type="checkbox" name="fruits" value="cherry"> Cherry
+            </label><br>
+            <button type="submit">Submit</button>
+          </form>
+          
+</body>
+</html>
