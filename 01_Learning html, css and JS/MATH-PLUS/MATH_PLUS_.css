@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(88, 21, 21);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black;
+}
+
+.contenedor_general {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Dos columnas: izquierda 1fr, derecha 2fr */
+    grid-template-rows: 1fr 1fr; /* Dos filas: una para input y otra para botones */
+    gap: 15px;
+    width: 80%;
+    height: 65vh;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.caja_valores_numeros {
+    color: black;
+    width: 500px;
+    grid-column: 1 / 2; /* Coloca la caja en la primera columna */
+    grid-row: 1 / 2; /* Coloca la caja en la primera fila */
+    background-color: rgb(230, 231, 158);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+input[type="text"] {
+    color: black; /* Cambia el color del texto a negro */
+    font-size: 16px; /* Tamaño de la fuente */
+    width: 200px; /* Ancho del input */
+    padding: 10px; /* Espaciado interno */
+    background-color: white; /* Fondo blanco para que contraste */
+}
+
+.caja_botones_operadores_y_resultado {
+    grid-column: 1 / 2; /* Coloca la caja en la primera columna */
+    grid-row: 2 / 3; /* Coloca la caja en la segunda fila */
+    background-color: rgb(230, 231, 158);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.caja_botones_operadores_y_resultado button {
+    padding: 10px 30px;
+    font-size: 20px; /* Cambia el tamaño de la fuente a 20 píxeles */
+}
+
+.caja_resultado {
+    grid-column: 2/ 3; /* Coloca la caja en la segunda columna */
+    grid-row: 1 / 3; /* Ocupa ambas filas (es decir, el alto de las dos cajas) */
+    background-color: rgb(158, 221, 231);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}

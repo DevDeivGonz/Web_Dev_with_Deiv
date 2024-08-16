@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/01_Learning html, css and JS/03.1_JS_beginner/02_variables y datos.css">
+    <script src="/01_Learning html, css and JS/03.1_JS_beginner/02_variables y datos.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="contenedor_general">
+        <!-- Caja para ingresar los valores numéricos -->
+        <div class="caja_valores_numeros">
+            <label for="numero_input_usuario">Ingrese los números:</label>
+            <br><br>
+            <input type="text" id="numero_input_usuario">
+            <br><br>
+            <button id="btn_total">TOTAL</button>
+        </div>
+        <div class="caja_botones_operadores_y_resultado">
+            <!-- Botones para realizar las operaciones -->
+            <button id="btn_suma">+</button>
+            <button id="btn_resta">-</button>
+            <button id="btn_multiplicacion">x</button>
+            <button id="btn_division">/</button>
+            <button id="btn_parentesis">()</button>
+            <br><br>
+            <button id="btn_mitad">1/2</button>
+            <button id="btn_potencia">**</button>
+            <button id="btn_logaritmo">log</button>
+            <button id="btn_porcentaje">%</button>
+            <br><br>
+            <button id="btn_decimal">Pasar a decimal</button>
+            <button id="btn_delete_ultimo">Del <---</button>
+            <button id="btn_delete_todo">DEL ALL</button>
+        </div>
+        <div class="caja_resultado">
+            <!-- Área donde se muestra el proceso de la operación -->
+            <label for="proceso_operacion_matematica">Proceso de la operación Matemática:</label>
+            <br><br>
+            <textarea name="proceso_operacion_matematica" id="proceso_operacion_matematica" rows="5" cols="60"></textarea>
+            <br><br>
+            <label for="resultado_operacion_matematica">Resultado de la operación Matemática:</label>
+            <br><br>
+            <textarea name="resultado_operacion_matematica" id="resultado_operacion_matematica" rows="5" cols="60"></textarea>
+        </div>
+    </div>
+</body>
+</html>
+
+
