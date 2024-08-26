@@ -27,7 +27,7 @@ function requested_result_divison() {
     let number_1 = parseInt(document.getElementById("num1").value);
     let number_2 = parseInt(document.getElementById("num2").value);
     let result_divition = number_1 / number_2
-    document.getElementById("result").innerText =
+    document.getElementById("result").value =
     "The divition of " + number_1 + " and " + number_2+ " is: " + result_divition;
 }
 
