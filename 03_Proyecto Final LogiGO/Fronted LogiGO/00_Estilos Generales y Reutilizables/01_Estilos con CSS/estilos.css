@@ -1,6 +1,6 @@
 /* Estilo general del body */
 body {
-    background-color: #210246f6;
+    background-color: #161625;
     color: black;
     display: flex;
     flex-direction: column; /* Coloca los elementos en columna */
@@ -13,7 +13,7 @@ body {
 
 .titulo_LogiGO {
     width: 1140px;
-    background-color: #573186d7;
+    background-color: #6275a3;
     color: white;
     margin-top: 20px; /* Ajusta el margen superior según necesites */
     padding: 2%;
@@ -26,7 +26,7 @@ body {
 /* Barra de navegación general UI para empleados */
 .contenedor_barra_nav_general {
     width: 1148px;
-    background-color: #573186d7;
+    background-color: #6275a3;
     position: relative;
     padding: 20px;
     display: flex;
@@ -54,7 +54,7 @@ body {
     padding: 10px 20px;
     border-radius: 0 10px 10px 0; /* Redondea las esquinas del lado derecho */
     border: none;
-    background-color: #210246f6;
+    background-color: #6275a3;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -68,7 +68,7 @@ body {
 /* Estilo para los botones en la barra de navegación */
 .contenedor_barra_nav_general button {
     padding: 12px 39px;
-    background-color: #210246f6;
+    background-color: #6275a3;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.300) 10px 10px;
     border-radius: 10px;
@@ -76,7 +76,7 @@ body {
 }
 
 .contenedor_barra_nav_general button:hover {
-    background-color: #382d7a; /* Color al pasar el ratón por encima */
+    background-color: #6275a3; /* Color al pasar el ratón por encima */
 }
 
 /* Contenedor principal para caja_login y texto adicional */
@@ -93,7 +93,7 @@ body {
     width: 300px;
     padding: 20px;
     border-radius: 8px;
-    background-color: #573186d7;
+    background-color: #6275a3;
     box-shadow: 20px 14px rgba(0, 0, 0, 0.2);
     color: white;
     text-align: center; /* Centra el texto dentro de la caja de login */
@@ -137,14 +137,10 @@ body {
 .informacion_general {
     width: 500px; /* Ancho del texto adicional */
     height: 256px;
-    background-color: #573186d7;
+    background-color: #6275a3;
     box-shadow: 25px 14px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     color: white; /* Color del texto */
     text-align: left; /* Alineación del texto a la izquierda */
-    padding: 5%;
+    padding:5%;
 }
-
-
-/*_______________________________________*/
-/* EMPLEADOS sesion */

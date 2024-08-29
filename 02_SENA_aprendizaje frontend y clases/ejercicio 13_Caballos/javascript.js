@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const caballoSeleccionado = parseInt(document.getElementById('seleccionar_caballo').value);
         const apuesta = parseFloat(document.getElementById('apuesta_corrida_caballos').value);
         const longitudPista = 100;
-        let posiciones = [0, 0, 0, 0, 0];
+        let posiciones = [-10, -10, -10, -10, -10];
         let intervaloCarrera = setInterval(() => {
 
             // Corregir la variable de iteración de "i" a "caballo" en el primer bucle
@@ -28,6 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     break;
                 }
             }
-        }, 100);
+        }, 50);
     });
 });
