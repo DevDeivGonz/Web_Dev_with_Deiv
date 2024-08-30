@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+    <script src="./empleados.js"></script>
+</head>
+<body>
+    <h2>
+        crear una clase usuario que herede a una clase que se llame administrador y <br>
+        a otra clase que se llame cliente, Inicializar la clase usuario con un nombre y <br>
+        su genero, con sus métodos imprimrir.  si el administador tiene mas de 30 años y <br>
+        es mujer, imprima tiene bonificación. Si no, no tiene bonificación. Para el cliente <br>
+        validar si es mujer y su cupo de compra es > 100000, aplica a promoción, si no, no <br>
+        aplica a promoción.
+    </h2>
+    <br><br><br><br>
+
+    <input type="text" id="nombre_usuario" placeholder="Nombre">
+    <br><br>
+
+    <input type="text" id="edad_usuario" placeholder="Edad">
+    <br><br>
+    
+    <select name="" id="tipo_usuario">
+        <option value="perfil_admin" id="perfil_admin">Perfil Administrador</option>
+        <option value="perfil_cliente" id="perfil_cliente">Cliente</option>
+        <option value="otro_tipo_usuario" id="otro_tipo_usuario">Otro...</option>
+    </select>
+    <br><br>
+
+    <select name="" id="generios_usuarios">
+        <option value="mujer" id="mujer">Mujer</option>
+        <option value="hombre" id="hombre">Hombre</option>
+        <option value="otro_genero" id="otro_genero">Otro...</option>
+    </select>
+    <br><br><br>
+
+    <input type="number" id="precio_cupon" placeholder="Ingrese el cupo de compra">
+    <br><br><br>
+
+    <button id="suministrar_info">Validar usuario ingresado...</button>
+    <br><br>
+
+    <textarea id="mostrar_todo_en_lista" rows="8" cols="50"></textarea>
+    <br><br><br><br><br>
+</body>
+</html>
