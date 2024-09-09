@@ -1,0 +1,135 @@
+body 
+{
+    background-color: black;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 0; /* Elimina margen en el body */
+}
+
+.casilla_general {
+    background-color: rgba(0, 255, 255, 0.192);
+    color: white;
+    width: 430px;
+    height: 800px;
+    overflow: auto;
+    padding: 50px;  /* Ajusta padding para alineación más natural */
+    box-sizing: border-box;
+    text-align: left;  /* Alinea el texto a la izquierda */
+    box-shadow: 20px 10px 7px rgba(128, 128, 128, 0.342);
+    border-radius: 3%;
+    margin: 20px 0px 40px 0px;
+}
+
+
+#pasar_info_a_JSON {
+    width: 300px;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    /* Mueve el botón hacia abajo y a la derecha */
+    margin-top: 50px; /* Mueve hacia abajo (en px) */
+    margin-left: 2%; /* Mueve hacia la derecha (en %) */
+    cursor: pointer;
+    perspective: 30rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+  }
+  
+  button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+      320deg,
+      rgba(0, 247, 255, 0.589),
+      rgba(128, 0, 0, 0.712)
+    );
+    z-index: 1;
+    transition: background 5s;
+  }
+  
+  button:hover::before {
+    animation: rotate 1s;
+    transition: all 0.5s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateY(180deg);
+    }
+  
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+
+/*CLASES INPUTS PERO SOLO PARA ESTO XD*/
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.input_estilos_melos {
+    --input-focus: #2d8cf0;
+    --font-color: #fefefe;
+    --font-color-sub: #7e7e7e;
+    --bg-color: #01705860;
+    --main-color: #fefefe;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px; 
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+  }
+  
+  .input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+  }
+  
+  .input:focus {
+    border: 2px solid var(--input-focus);
+  }
+
+  /* Estilos para el textarea */
+.mostrar_info {
+    --input-focus: #2d8cf0;
+    --font-color: #fefefe;
+    --font-color-sub: #7e7e7e;
+    --bg-color: #01705860;
+    --main-color: #fefefe;
+    width: 300px;
+    height: 150px; /* Ajusta la altura según lo necesario */
+    border-radius: 5px; 
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 10px; /* Mayor padding para un textarea */
+    outline: none;
+    resize: none; /* Evita el redimensionamiento del textarea */
+}
+
+.mostrar_info::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+.mostrar_info:focus {
+    border: 2px solid var(--input-focus);
+}

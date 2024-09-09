@@ -1,0 +1,111 @@
+/* Estilo general del body */
+body {
+    background-color: #161624; /* Establece el color de fondo del cuerpo de la página */
+}
+
+/* Contenedor principal con un diseño de grid */
+.contenedor_general {
+    display: grid; /* Usa el modelo de diseño de grid para organizar el contenido */
+    grid-template-columns: 20% 80%; /* Define dos columnas: una de 20% de ancho y otra de 80% */
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana del navegador */
+    padding: 20px; /* Agrega espacio interno alrededor del contenido del contenedor */
+    gap: 20px; /* Define el espacio entre las columnas del grid */
+}
+
+/* Estilo para la columna de información y botones del usuario */
+.columna_info_y_botones_empleado {
+    background-color:  #232c42;; /* Establece el color de fondo de la columna */
+    padding: 15px; /* Agrega espacio interno alrededor de los botones en la columna */
+}
+
+/* Estilo para los botones en la columna de información y botones del usuario */
+.columna_info_y_botones_empleado button {
+    width: 230px; /* Define el ancho de los botones */
+    height: 60px; /* Define la altura de los botones */
+    color: #fff; /* Establece el color del texto en los botones */
+    border-radius: 5px; /* Redondea las esquinas de los botones */
+    padding: 10px 25px; /* Agrega espacio interno dentro de los botones */
+    font-family: 'Lato', sans-serif; /* Establece la fuente del texto en los botones */
+    font-weight: 500; /* Define el grosor del texto en los botones */
+    background: #161624; /* Establece el color de fondo inicial de los botones */
+    background: linear-gradient(0deg, #161624 0%, #161624 100%); /* Aplica un degradado de fondo a los botones */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    transition: all 0.3s ease; /* Define una transición suave para todos los cambios en el botón */
+    position: relative; /* Establece la posición del botón en relación con su posición original */
+    display: block; /* Hace que los botones se comporten como elementos de bloque */
+    margin-bottom: 20px; /* Agrega espacio debajo de cada botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1); /* Agrega una sombra al botón para darle un efecto de profundidad */
+    outline: none; /* Elimina el contorno predeterminado que aparece al enfocar el botón */
+}
+
+/* Estilo para los botones en estado hover */
+.columna_info_y_botones_empleado button:hover {
+    background: rgba(0, 4, 255, 0.363); /* Cambia el color de fondo del botón en estado hover */
+    background: linear-gradient(0deg, rgba(0, 17, 255, 0.199) 0%, rgba(2, 126, 251, 0.178) 100%); /* Aplica un degradado de fondo al botón en estado hover */
+}
+
+/* Estilo para la columna de ejecución de funciones */
+.columna_contenido_Paginas_Desplegables {
+    background-color: white; /* Establece el color de fondo de la columna */
+    border: 13px solid #232c42; /* Aplica un borde de 10px a los cuatro lados */
+    padding: 15px; /* Agrega espacio interno alrededor de los botones en la columna */
+}
+
+
+
+/* Estilo para la barra de navegación */
+nav {
+    min-width: 100px; /* Define el ancho mínimo de la barra de navegación */
+    max-width: 1400px; /* Define el ancho máximo de la barra de navegación */
+    min-height: 20px; /* Define la altura mínima de la barra de navegación */
+    background-color:  rgba(61, 106, 255, 0.226); /* Establece el color de fondo de la barra de navegación */
+    padding: 10px; /* Agrega espacio interno alrededor del contenido de la barra de navegación */
+    text-align: right; /* Alinea el texto al borde derecho de la barra de navegación */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista predeterminados en la barra de navegación */
+    padding: 0; /* Elimina el espacio interno de la lista */
+    margin: 0; /* Elimina el margen alrededor de la lista */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea, uno al lado del otro */
+    margin-right: 20px; /* Agrega espacio a la derecha de cada elemento de la lista */
+}
+
+nav ul li a {
+    color: white; /* Establece el color del texto de los enlaces en la barra de navegación */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Cambia el color de fondo del enlace en estado hover */
+}
+
+/* Estilo para las páginas desplegables */
+.pagina {
+    display: none; /* Por defecto, el contenido está oculto */
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Color blanco al desplegar */
+    padding: 20px;
+    box-sizing: border-box;
+    animation: desplegar 0.5s ease-in-out;
+
+}
+
+/* Animación para que la página se desplace desde la derecha */
+@keyframes slideIn {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+

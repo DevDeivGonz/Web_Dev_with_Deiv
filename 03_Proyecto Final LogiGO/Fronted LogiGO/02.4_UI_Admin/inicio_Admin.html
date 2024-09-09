@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - Logística</title>
+    <link rel="stylesheet" href="./UI_Admin_estilos.css">
+    <script src="./IU_Admin.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="barra_superior">
+                <li><a href="dashboard_admin.html">Dashboard</a></li>
+                <li><a href="dashboard_bodega.html">Gestión de Bodega</a></li>
+                <li><a href="dashboard_recepcion.html">Gestión de Recepción</a></li>
+                <li><a href="dashboard_conductor.html">Seguimiento de Conductores</a></li>
+                <button id="cerrar_sesion">Cerrar Sesión</button>
+            </div>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="title">
+            <h1>Area de Logistica y transporte.</h1>
+            <p>Aquí puedes gestionar usuarios, ver reportes globales y monitorear la operación completa.</p>
+            <button onclick="manageUsers()">Gestionar Usuarios</button>
+            <button onclick="viewReports()">Ver Reportes</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/00_Estilos Generales y Reutilizables/Login_style.css">
-    <script src="./logica_para_todo.js"></script>
+    <link rel="stylesheet" href="./Login_estilo.css">
+    <script src="./Login_LogiGO.js"></script>
 </head>
     <body>
-        <div class="form-control">
-            <input type="text" required id="username">
-                <label for="username">
-                    <span>U</span>
-                    <span>s</span>
-                    <span>u</span>
-                    <span>a</span>
-                    <span>r</span>  
-                    <span>i</span>
-                    <span>o</span>
-                </label>
+        <div class="contenedor">
+            <form action="">
+                <p class="titulo-login">Iniciar Sesión</p>
+                <div class="campo-input">
+                    <input id="nombre_usuario" required="" placeholder="Nombre de Usuario" type="text">
+                </div>
+                <div class="campo-input">
+                    <input id="password_usuario" required="" placeholder="Contraseña" type="password">
+                </div>
+                <div class="recordar-olvidar">
+                    <label><input type="checkbox"> Recordarme</label>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button id="Validar_usuario" class="btn" type="submit">Iniciar Sesión</button>
+            </form>
         </div>
-        <!-- Contraseña -->
-        <div class="form-control">
-            <input type="password" required id="password">
-                <label for="password">
-                    <span>C</span>
-                    <span>o</span>
-                    <span>n</span>
-                    <span>t</span>
-                    <span>r</span>
-                    <span>a</span>
-                    <span>s</span>
-                    <span>e</span>
-                    <span>ñ</span>
-                    <span>a</span>
-                </label>
-        </div>
+    
     </body>
 </html>

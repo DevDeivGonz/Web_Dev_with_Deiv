@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h2>Datos del remitente (Persona que hace el envio)</h2>
+                <label>Nombre Completo:</label>
+                <input type="text" id="nombre"><br>
+                <label>Tipo de documento:</label>
+                <select id="tipo_documento_CorresponsalEnvio">
+                    <option value="cedula">Cédula</option>
+                    <option value="NIT_empresa">NIT (Si es empresa)</option>
+                    <option value="tarjeta_identidad">Tarjeta de identidad</option>
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="otro">Otro</option>
+                </select><br>
+                <label>Numero de contacto:</label>
+                <input type="text" id="numero_contacto"><br>
+                <label>Correo electronico:</label>
+                <input type="email" id="correo_electronico"><br>
+                <label>Ciudad para el envio:</label>
+                <select id="ciudades_envio">
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Bucaramanga">Bucaramanga</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Cartagena">Cartagena</option>
+                    <option value="Cúcuta">Cúcuta</option>
+                    <option value="Ibagué">Ibagué</option>
+                    <option value="Manizales">Manizales</option>
+                    <option value="Medellín">Medellín</option>
+                    <option value="Montería">Montería</option>
+                    <option value="Neiva">Neiva</option>
+                    <option value="Pereira">Pereira</option>
+                    <option value="Santa_Marta">Santa Marta</option>
+                    <option value="Sincelejo">Sincelejo</option>
+                    <option value="Villavicencio">Villavicencio</option>
+                </select><br>
+                <label>Dirección:</label>
+                <input type="text" id="direccion"><br>
+                <label>Fecha de entrega:</label>
+                <input type="date" id="fecha"><br>
+                <h2>Datos del envio:</h2>
+                <label>Categoria del envio:</label>
+                <select id="categoria">
+                    <option value="aseo">Aseo</option>
+                    <option value="comida">Comida</option>
+                    <option value="farmacia">Farmacia</option>
+                    <option value="fragil">Fragil</option>
+                    <option value="limpieza">Limpieza</option>
+                    <option value="plasticos">Plásticos</option>
+                    <option value="pelogrosos">Peligrosos</option>
+                </select><br>
+                <label>Descripción del envío:</label>
+                <textarea id="descripcion"></textarea><br>
+                <label>Precio Neto:</label>
+                <input type="number" id="precioNeto"><br>
+                <label>Método de pago:</label>
+                <select id="metodo_pago">
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="Tarjeta_Credito">Tarjeta de Crédito</option>
+                    <option value="Transferencia_Bancaria">Transferencia Bancaria</option>
+                    <option value="Otro">Otro</option>
+                </select><br>
+                <button id="calcular">Calcular</button>
+                <button class="guardar">Guardar</button>
+</body>
+</html>
