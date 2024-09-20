@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiGO Conductor</title>
+    <link rel="stylesheet" href="../Estilo_general.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./UI_conductor.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="barra_superior">
+            <a href="dashboard_admin.html">Dashboard</a>
+            <a href="dashboard_bodega.html">Gestión de Bodega</a>
+            <a href="dashboard_recepcion.html">Gestión de Recepción</a>
+            <a href="dashboard_conductor.html">Seguimiento de Conductores</a>
+            <button id="cerrar_sesion">Cerrar Sesión</button>
+        </div>
+    </nav>
+
+    <div class="contenedor_general">
+        <div id="columna_botones" class="columna_info_y_botones">
+            <button class="btn" id="verificar_rutas">VERIFICAR RUTAS</button>
+            <button class="btn" id="paradas">VER MAPA</button>
+            <button class="btn" id="direcciones">DIRECCIONES</button>
+            <button class="btn" id="informacion">INFORMACIÓN</button>
+            <button class="btn" id="id_orden">ID DE ORDEN</button>
+            <button class="btn" id="vehiculo">VEHICULO ASIGNADO</button>
+            <button class="btn" id="soporte">SOPORTE</button>
+        </div>
+
+        <div id="columna_contenido_Desplegables_conductor" class="columna_contenido_Paginas_Desplegables">
+            <!-- Las páginas desplegables se añadirán aquí -->
+        </div>
+    </div>
+</body>
+
+</html>

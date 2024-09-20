@@ -41,7 +41,7 @@ $(document).ready(function () {
         fragil: 150000,
         limpieza: 10000,
         plasticos: 90000,
-        pelogrosos: 300000
+        peligrosos: 300000
     };
 
     // Disponibilidad y precios de recargo
@@ -63,60 +63,39 @@ $(document).ready(function () {
         Villavicencio: {disponibilidad: false, recargo: 20000}
     };
 
-    // Manejo del clic en el botón "Generar Envío"
-    $(".generar_envio").click(function() {
-        var mostrarPage_GenerarEnvio = $(this).data("page"); 
-    
-        if (!mostrarPage_GenerarEnvio) {
-            console.error("El atributo 'data-page' no está definido para este botón.");
-            return;
-        }
-    
-        // Ocultar cualquier página visible
-        $("#columna_contenido_pageDesplegables").children().hide();
-    
-        // Comprobar si la página ya existe
-        if ($("#" + mostrarPage_GenerarEnvio).length) {
-            $("#" + mostrarPage_GenerarEnvio).fadeIn();
-        } else {
-            var newPage = $("<div></div>", {
-                id: mostrarPage_GenerarEnvio,
-                class: "columna_contenido_Paginas_Desplegables"
-            });
-    
-            newPage.html();
-    
-            $("#columna_contenido_pageDesplegables").append(newPage);
-            newPage.fadeIn(`
-                
-            `);
-        }
-    });
     
     // Manejo del clic en el botón "Calcular"
     $(document).on('click', '#calcular', function() {
-        var nombre = $("#nombre").val();
-        var tipoDocumento = $("#tipo_documento_CorresponsalEnvio").val();
-        var contacto = $("#numero_contacto").val();
-        var correo = $("#correo_electronico").val();
-        var ciudad = $("#ciudades_envio").val();
-        var categoria = $("#categoria").val();
-        var direccion = $("#direccion").val();
-        var fecha = $("#fecha").val();
-        var descripcion = $("#descripcion").val();
-        var precioNeto = parseFloat($("#precioNeto").val());
-        var metodoPago = $("#metodo_pago").val();
+        let nombre = $("#nombre").val();
+        let tipoDocumento = $("#tipo_documento_CorresponsalEnvio").val();
+        let contacto = $("#numero_contacto").val();
+        let correo = $("#correo_electronico").val();
+        let ciudad = $("#ciudades_envio").val();
+        let categoria = $("#categoria").val();
+        let direccion = $("#direccion").val();
+        let fecha = $("#fecha").val();
+        let descripcion = $("#descripcion").val();
+        let precioNeto = parseFloat($("#precioNeto").val());
+        let metodoPago = $("#metodo_pago").val();
 
-        var envio = new Envio(nombre, tipoDocumento, contacto, correo, ciudad, categoria, 
+        // Validación básica
+        if (isNaN(precioNeto)) {
+            alert("Por favor, introduce un precio neto válido.");
+            return;
+        }
+
+        let envio = new Envio(nombre, tipoDocumento, contacto, correo, ciudad, categoria, 
             direccion, fecha, descripcion, precioNeto, metodoPago);
+        
+        let precioBase = precio_por_envio[categoria];
+        let recargo = disponibilidad_cuidad_x_envio[ciudad].recargo;
+        let total = precioBase + recargo;
 
-        var precioBase = precio_por_envio[categoria];
-        var recargo = disponibilidad_cuidad_x_envio[ciudad].recargo;
-        var total = precioBase + recargo;
+        // Generar la factura y el texto final con HTML correctamente formateado
+        let factura = envio.generarFactura();
+        let factura_final = `${factura}<p><strong>El precio total del envío es:</strong> $${total}</p>`;
 
-        var factura = envio.generarFactura();
-        factura += `<p><strong>Total a pagar:</strong> $${total}</p>`;
-
-        $("#columna_contenido").append(factura);
+        // Mostrar la factura en el div
+        $("#mostrar_text_factura").html(factura_final);
     });
 });

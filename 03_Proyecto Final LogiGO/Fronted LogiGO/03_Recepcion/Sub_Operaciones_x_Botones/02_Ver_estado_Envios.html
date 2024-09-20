@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/03_Recepcion/Sub_Operaciones_x_Botones/style_SubOperaciones.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Consulta de Envíos</h2>
+
+        <div class="form-group">
+            <label for="id_envio">ID del Envío:</label>
+            <input type="text" id="id_envio">
+        </div>
+        
+        <div class="form-group">
+            <label for="nombre_destinatario">Nombre Completo del Destinatario:</label>
+            <input type="text" id="nombre_destinatario">
+        </div>
+
+        <div class="form-group">
+            <label for="email_destinatario">Correo Electrónico:</label>
+            <input type="email" id="email_destinatario">
+        </div>
+
+        <div class="form-group">
+            <label for="numero_contacto_destinatario">Número de Contacto:</label>
+            <input type="text" id="numero_contacto_destinatario">
+        </div>
+
+        <div class="form-group">
+            <label for="direccion_destinatario">Dirección del Destinatario:</label>
+            <input type="text" id="direccion_destinatario">
+        </div>
+
+        <div class="form-group">
+            <label for="fecha_inicio">Fecha de Inicio:</label>
+            <input type="date" id="fecha_inicio">
+        </div>
+
+        <div class="button-group">
+            <button id="buscar_envios">Buscar Envíos</button>
+            <button id="limpiar_filtro">Limpiar Filtros</button>
+        </div>
+        <br><br>
+
+        <h2>Resultados de la Búsqueda</h2>
+        <div id="resultado_busqueda" class="resultado-caja">
+            <p id="estado_envio_resultado">Estado del Envío: <span id="estado_envio_text">No disponible</span></p>
+            <a id="ver_factura" href="#" download style="display: none;">Descargar Factura</a>
+        </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Estilo general del body */
+body {
+    background-color: #161624; /* Establece el color de fondo del cuerpo de la página */
+    font-size: 1rem; /* Tamaño base de la fuente, relativo para el escalado */
+    font-family: Arial, sans-serif; /* Familia de fuentes general */
+}
+
+/* Contenedor principal con un diseño de grid */
+.contenedor_general {
+    display: grid; /* Usa el modelo de diseño de grid para organizar el contenido */
+    grid-template-columns: 20% 80%; /* Define dos columnas: una de 20% de ancho y otra de 80% */
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana del navegador */
+    padding: 1rem; /* Espacio interno alrededor del contenido */
+    gap: 1rem; /* Define el espacio entre las columnas */
+}
+
+/* Estilo para la columna de información y botones del usuario */
+.columna_info_y_botones_empleado {
+    background-color: #232c42; /* Fondo de la columna */
+    padding: 1rem; /* Espaciado interno */
+    display: flex; /* Flexbox para alinear botones */
+    flex-direction: column; /* Alineación de botones en columna */
+    align-items: center; /* Centra los botones horizontalmente */
+}
+
+/* Estilo para los botones en la columna de información y botones del usuario */
+.columna_info_y_botones_empleado button {
+    width: 80%; /* Ancho relativo al contenedor */
+    height: 3rem; /* Alto en unidades rem para escalado */
+    color: #fff; /* Color del texto */
+    padding: 0.5rem 1rem; /* Espaciado interno del botón */
+    background: #161624; /* Fondo del botón */
+    border: none; /* Sin bordes */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    margin-bottom: 1rem; /* Espacio entre botones */
+    font-size: 1rem; /* Tamaño de texto adaptable */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover para los botones */
+.columna_info_y_botones_empleado button:hover {
+    background: rgba(0, 4, 255, 0.363); /* Fondo de degradado en hover */
+    background: linear-gradient(0deg, rgba(0, 17, 255, 0.199) 0%, rgba(2, 126, 251, 0.178) 100%);
+    transform: scale(1.05); /* Agranda ligeramente el botón en hover */
+}
+
+/* Estilo para la columna de contenido */
+.columna_contenido_Paginas_Desplegables {
+    background-color: white; /* Fondo de la columna */
+    border: 0.75rem solid #232c42; /* Borde alrededor de la columna */
+    padding: 1rem; /* Espaciado interno */
+    height: 100%; /* Altura completa */
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    background-color: rgba(61, 106, 255, 0.226); /* Fondo translúcido de la barra de navegación */
+    padding: 0.5rem; /* Espaciado interno */
+    text-align: right; /* Alineación a la derecha */
+}
+
+/* Estilo para los elementos de la barra de navegación */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+}
+
+nav ul li {
+    display: inline; /* Alinea los elementos en una fila */
+    margin-right: 1rem; /* Espaciado entre los elementos */
+}
+
+nav ul li a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Fondo al pasar sobre el enlace */
+    padding: 0.5rem; /* Espaciado interno */
+}
+
+/* Estilo para las páginas desplegables */
+.pagina {
+    display: none; /* Oculto por defecto */
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Fondo blanco */
+    padding: 1rem; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye padding y borde en las dimensiones */
+    animation: desplegar 0.5s ease-in-out; /* Animación al desplegar */
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - Logística</title>
+    <link rel="stylesheet" href="../Estilo_general.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/02_Perfil_Admin/IU_Admin.js"></script>
+</head>
+<body>   
+    <nav>
+        <div class="barra_superior">
+            <a href="dashboard_admin.html">Dashboard</a>
+            <a href="dashboard_bodega.html">Gestión de Bodega</a>
+            <a href="dashboard_recepcion.html">Gestión de Recepción</a>
+            <a href="dashboard_conductor.html">Seguimiento de Conductores</a>
+            <button id="cerrar_sesion">Cerrar Sesión</button>
+        </div>
+    </nav>
+    
+    <div class="contenedor_general">
+        <div id="columna_botones_admin" class="columna_info_y_botones">
+            <button id='pagina_Gestionar_Usuarios' class="Gestionar_Usuarios">Gestionar Usuarios</button>
+            <button id='pagina_Gestionar_Envíos' class="Gestionar_Envíos">Gestionar Envíos</button>
+            <button id='pagina_Gestionar_Rutas' class="Gestionar_Rutas">Gestionar Rutas</button>
+            <button id='pagina_Contactar_Soporte' class="Contactar_Soporte">Contactar Soporte</button>
+            <button id='pagina_Ver_Estadísticas' class="Ver_Estadísticas">Ver Estadísticas</button>
+        </div>
+        <div id="columna_contenido_Desplegables_pagesAdmin" class="columna_contenido_Paginas_Desplegables">
+            Contenido de administración
+        </div>
+    </div>
+</body>
+</html>

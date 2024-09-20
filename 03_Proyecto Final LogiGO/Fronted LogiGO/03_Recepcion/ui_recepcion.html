@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiGO Recepcion</title>
+    <link rel="stylesheet" href="./ui_recepcion.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./ui_recepcion.js" defer></script>
+</head>
+<body>
+    <!-- Barra  -->
+    <nav>
+        <ul>
+            <div class="barra_superior">
+                <li><a href="dashboard_conductor.html">Configuraciones</a></li>
+                <li><a href="index.html" id="cerrar_sesion">Cerrar Sesión</a></li>
+            </div>
+        </ul>
+    </nav>
+    
+    <div class="contenedor_general">
+        <div id="columna_botones_recepcion" class="columna_info_y_botones_empleado">
+            <button class="generar_envio" id="pagina_generar_envio">Generar Envío</button>
+            <button class="ver_estado_envios" id="pagina_ver_estado_envios">Ver estado Envíos</button>
+            <button class="modificar_envios" id="pagina_modificar_envios">Modificar Envíos</button>
+            <button class="soporte" id="pagina_soporte">Soporte</button>
+        </div>
+
+        <div id="columna_contenido_pageDesplegables" class="columna_contenido_Paginas_Desplegables">
+            <!-- Las páginas desplegables se añadirán aquí -->
+        </div>
+    </div>
+</body>
+</html>

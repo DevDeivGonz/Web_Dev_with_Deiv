@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/02_Perfil_Admin/sub_paginas_Admin/estilos_Subpaginas.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container"></div>
+        <h2>Gestionar Rutas</h2>
+        <form>
+            <div class="form-group">
+                <label for="ruta">Nombre de la Ruta</label>
+                <input type="text" id="ruta" name="ruta" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" name="descripcion"></textarea>
+            </div>
+            <div class="button-group">
+                <button type="submit">Guardar Ruta</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+        <div id="resultado_busqueda">
+            <h3>Rutas Disponibles</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ruta 1</td>
+                        <td>Descripción de la Ruta 1</td>
+                        <td><button>Editar</button> <button>Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ruta 2</td>
+                        <td>Descripción de la Ruta 2</td>
+                        <td><button>Editar</button> <button>Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

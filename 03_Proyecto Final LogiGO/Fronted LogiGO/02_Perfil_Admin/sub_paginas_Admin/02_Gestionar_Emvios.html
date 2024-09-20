@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/02_Perfil_Admin/sub_paginas_Admin/estilos_Subpaginas.css">
+</head>
+<body>
+    <div class="form-container"></div>
+        <h2>Gestionar Envíos</h2>
+
+        <!-- Formulario para registrar un nuevo envío -->
+        <form>
+            <div class="form-group">
+                <label for="remitente">Remitente</label>
+                <input type="text" id="remitente" name="remitente">
+            </div>
+            <div class="form-group">
+                <label for="destinatario">Destinatario</label>
+                <input type="text" id="destinatario" name="destinatario">
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado del Envío</label>
+                <select id="estado" name="estado">
+                    <option value="en_proceso">En Proceso</option>
+                    <option value="enviado">Enviado</option>
+                    <option value="entregado">Entregado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="detalles">Detalles del Envío</label>
+                <textarea id="detalles" name="detalles"></textarea>
+            </div>
+            <div class="button-group">
+                <button type="submit">Registrar Envío</button>
+            </div>
+        </form>
+
+        <!-- Tabla de envíos registrados -->
+        <h2>Envíos Registrados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Remitente</th>
+                    <th>Destinatario</th>
+                    <th>Estado</th>
+                    <th>Detalles</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Juan Pérez</td>
+                    <td>María López</td>
+                    <td>En Proceso</td>
+                    <td>Envío urgente</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Ana Gómez</td>
+                    <td>Carlos Fernández</td>
+                    <td>Enviado</td>
+                    <td>Entrega estándar</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</body>
+</html>

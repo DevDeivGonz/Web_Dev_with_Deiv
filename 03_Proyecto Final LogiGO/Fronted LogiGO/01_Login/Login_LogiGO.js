@@ -24,16 +24,16 @@ class login_por_cada_usuario {
             if (cada_usuario.validateCredentials(nombre_usuario, contrasena_usuario)) {
                 switch (cada_usuario.role_usuario) {
                     case 'Admin':
-                        window.location.href = 'http://127.0.0.1:5502/Fronted%20LogiGO/02.4_UI_Admin/inicio_Admin.html';
+                        window.location.href = '/02_Perfil_Admin/inicio_Admin.html';
                         break;
                     case 'Empleado Recepcion':
-                        window.location.href = 'http://127.0.0.1:5502/Fronted%20LogiGO/02.1_UI_E.Recepcion/iui_recepcion.html';
+                        window.location.href = '/03_Recepcion/ui_recepcion.html';
                         break;
                     case 'Empleado Bodega':
-                        window.location.href = 'http://127.0.0.1:5502/Fronted%20LogiGO/02.2_UI_E.Bodega/inicio_em_Bodega.html';
+                        window.location.href = '';
                         break;
                     case 'Empleado Conductor':
-                        window.location.href = 'http://127.0.0.1:5502/Fronted%20LogiGO/02.3_UI_E.Conductor/inicio_em_conductor.html';
+                        window.location.href = '/04_Conductor/inicio_conductor.html';
                         break;
                     default:
                         alert("Error, usuario no valido, inexistente o bloqueado.");

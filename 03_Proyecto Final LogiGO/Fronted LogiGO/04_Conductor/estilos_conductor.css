@@ -1,0 +1,127 @@
+/* Estilo general del body */
+body {
+  background-color: #161624;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.left-to-right { 
+ animation: 0.4s left-to-right forwards;
+ font-size: 24px;
+ font-weight: 600;
+ letter-spacing: -.005em;
+ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+ color: #86AAF9; text-align: left;
+}
+
+@keyframes left-to-right {
+ from {
+ transform: translateX(100vw);
+ }
+ to {
+ transform: translateX(0);
+ }
+}
+
+/* Contenedor principal con un diseño de grid */
+.contenedor_general {
+    display: grid; /* Usa el modelo de diseño de grid para organizar el contenido */
+    grid-template-columns: 20% 80%; /* Define dos columnas: una de 20% de ancho y otra de 80% */
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana del navegador */
+    padding: 20px; /* Agrega espacio interno alrededor del contenido del contenedor */
+    gap: 20px; /* Define el espacio entre las columnas del grid */
+}
+
+
+
+nav {
+    width: 97.6%;
+    margin: 0.5% ;
+    background-color: rgba(61, 106, 255, 0.226);
+    padding: 10px;
+    text-align: right;
+  }
+  
+  /* Contenido de la barra superior */
+  nav .barra_superior {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 99%;
+  }
+  
+  /* Enlaces de navegación */
+  nav .barra_superior a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  nav .barra_superior a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }
+  
+  /* Botón de cerrar sesión */
+  nav button {
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  /* Hover en el botón de cerrar sesión */
+  nav button:hover {
+    background-color: #e63946;
+  }
+  
+                        
+.columna_info_y_botones {
+  background-color: #232c42;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px; /* Espacio entre botones */
+}
+
+/* Botones de la columna admin */
+.columna_info_y_botones button {
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  padding: 10px 25px;
+  color: #fff;
+  background: #161624;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Hover en los botones */
+.columna_info_y_botones button:hover {
+  background: linear-gradient(0deg, rgba(0, 17, 255, 0.199) 0%, rgba(2, 126, 251, 0.178) 100%);
+  transform: scale(1.05);
+}
+
+/* Columna de contenido */
+.columna_contenido_Paginas_Desplegables {
+  background-color: white;
+  border: 13px solid #232c42;
+  padding: 15px;
+  overflow-y: auto;
+}
+

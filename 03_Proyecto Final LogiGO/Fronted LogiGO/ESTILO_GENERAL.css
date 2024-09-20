@@ -1,0 +1,141 @@
+/* Estilo general del body */
+body {
+  background-color: #161624;
+  margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Contenedor principal con diseño de grid */
+.contenedor_general {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Diseño fluido en proporción 1/3 */
+  height: 100vh;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Estilo de la columna de botones */
+.columna_info_y_botones {
+  background-color: #232c42;
+  width: 95%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px; /* Espacio entre botones */
+}
+
+/* Botones de la columna admin */
+.columna_info_y_botones button {
+  width: 90%;
+  height: 7%;
+  padding: 10px 20px;
+  color: #fff;
+  background: #161624;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1vw;
+  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  flex-shrink: 0;
+  margin-top: 15px;
+}
+
+/* Hover en los botones */
+.columna_info_y_botones button:hover {
+  background: linear-gradient(0deg, rgba(0, 17, 255, 0.199) 0%, rgba(2, 126, 251, 0.178) 100%);
+  transform: scale(1.06);
+}
+
+/* Columna de contenido */
+.columna_contenido_Paginas_Desplegables {
+  background-color: white;
+  border: 13px solid #232c42;
+  padding: 15px;
+  overflow-y: auto;
+  font-size: 1vw;
+}
+
+/* Estilo de la barra de navegación */
+nav {
+  width: 97.6%;
+  margin: 0.5% ;
+  background-color: rgba(61, 106, 255, 0.226);
+  padding: 10px;
+  text-align: right;
+  font-size: 0.67vw;
+  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+
+}
+
+/* Contenido de la barra superior */
+nav .barra_superior {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px; /* Usa porcentaje para el espacio entre los elementos, se ajusta proporcionalmente */
+  width: 99%; /* Asegura que la barra ocupe todo el ancho disponible */
+}
+
+/* Enlaces de navegación */
+nav .barra_superior a {
+  color: white;
+  text-decoration: none;
+  padding: 1vh;
+}
+
+nav .barra_superior a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Botón de cerrar sesión */
+nav button {
+  background-color: #ff4c4c;
+  color: #fff;
+  border: none;
+  font-size: 100%;
+  padding: 0.5vw 1.5vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+/* Hover en el botón de cerrar sesión */
+nav button:hover {
+  background-color: #e63946;
+}
+
+/* Media queries para pantallas más grandes y más pequeñas */
+/* @media (max-width: 1024px) { */
+  /* .contenedor_general { */
+      /* grid-template-columns: 1fr 2fr; */
+  /* } */
+  /*  */
+  /* .columna_info_y_botones_Admin button { */
+      /* max-width: 180px; */
+  /* } */
+/* } */
+
+/* @media (max-width: 768px) { */
+  /* .contenedor_general { */
+    /* grid-template-columns: 1fr; Una sola columna para pantallas pequeñas */
+  /* } */
+/*  */
+  /* .columna_info_y_botones_Admin { */
+      /* flex-direction: row; */
+      /* flex-wrap: wrap; */
+      /* justify-content: center; */
+  /* } */
+/*  */
+  /* .columna_info_y_botones_Admin button { */
+      /* max-width: 150px; */
+      /* flex-grow: 1; */
+  /* } */
+/* } */
+/*  */

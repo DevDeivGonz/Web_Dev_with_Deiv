@@ -1,0 +1,92 @@
+/* Estilo general del body */
+body {
+    background-color: #161625; /* Establece el color de fondo del cuerpo de la página */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+.left-to-right { 
+ animation: 0.4s left-to-right forwards;
+ font-size: 24px;
+ font-weight: 600;
+ letter-spacing: -.005em;
+ font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+ color: #86AAF9; text-align: left;
+}
+
+@keyframes left-to-right {
+ from {
+ transform: translateX(100vw);
+ }
+ to {
+ transform: translateX(0);
+ }
+}
+
+/* Contenedor principal con un diseño de grid */
+.contenedor_general {
+    display: grid; /* Usa el modelo de diseño de grid para organizar el contenido */
+    grid-template-columns: 20% 80%; /* Define dos columnas: una de 20% de ancho y otra de 80% */
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana del navegador */
+    padding: 20px; /* Agrega espacio interno alrededor del contenido del contenedor */
+    gap: 20px; /* Define el espacio entre las columnas del grid */
+}
+
+/* Estilo para la columna de información y botones del usuario */
+.columna_info_y_botones_empleado {
+    background-color:  #232C42; /* Establece el color de fondo de la columna */
+    padding: 15px; /* Agrega espacio interno alrededor de los botones en la columna */
+}
+
+/* Estilo para los botones en la columna de información y botones del usuario */
+.columna_info_y_botones_empleado button {
+
+    position: relative; /* Establece la posición del botón en relación con su posición original */
+    display: block; /* Hace que los botones se comporten como elementos de bloque */
+    margin-bottom: 20px; /* Agrega espacio debajo de cada botón */}
+
+/* Estilo para la columna de ejecución de funciones */
+.columna_contenido_Paginas_Desplegables {
+    background-color: white; /* Establece el color de fondo de la columna */
+    border: 13px solid #232c42; /* Aplica un borde de 10px a los cuatro lados */
+    padding: 15px; /* Agrega espacio interno alrededor de los botones en la columna */
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    min-width: 100px; /* Define el ancho mínimo de la barra de navegación */
+    max-width: 1400px; /* Define el ancho máximo de la barra de navegación */
+    min-height: 20px; /* Define la altura mínima de la barra de navegación */
+    background-color:  rgba(61, 106, 255, 0.226); /* Establece el color de fondo de la barra de navegación */
+    padding: 10px; /* Agrega espacio interno alrededor del contenido de la barra de navegación */
+    font-size: 24px;
+    color: #86AAF9;
+    text-align: left;   
+}
+                        
+.btn {
+    cursor: pointer;
+    border: solid rgb(134, 170, 249);
+    font-family: "system-ui";
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    transition: 458ms;
+    width: 210px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 7px;
+    background: linear-gradient(90deg, rgb(35, 44, 66) 0%, rgb(47, 61, 92) 100%);
+    --hover-width: 210px;
+    --hover-borderc: #86aaf9;
+    --hover-borderSize: 0px;
+    --hover-bgc: #86aaf9;
+    }
+    
+    .btn:hover{
+    color: rgb(255, 255, 255);
+    width: 210px;
+    background: rgb(134, 170, 249) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-color: rgb(134, 170, 249);
+    border-width: 0px;
+    border-style: solid;
+    }

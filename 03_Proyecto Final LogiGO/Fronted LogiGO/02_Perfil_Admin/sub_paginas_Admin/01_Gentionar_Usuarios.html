@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/02_Perfil_Admin/sub_paginas_Admin/estilos_Subpaginas.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="user-management-container"></div>
+        <h2>Gestión de Usuarios</h2>
+
+        <div class="form-container">
+            <h3>Agregar Nuevo Usuario</h3>
+            <div class="form-group">
+                <label for="nombre_usuario">Nombre Completo:</label>
+                <input type="text" id="nombre_usuario">
+            </div>
+            <div class="form-group">
+                <label for="correo_usuario">Correo Electrónico:</label>
+                <input type="email" id="correo_usuario">
+            </div>
+            <div class="form-group">
+                <label for="rol_usuario">Rol:</label>
+                <select id="rol_usuario">
+                    <option value="admin">Administrador</option>
+                    <option value="bodega">Bodega</option>
+                    <option value="recepcion">Recepción</option>
+                    <option value="conductor">Conductor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="estado_usuario">Estado:</label>
+                <select id="estado_usuario">
+                    <option value="activo">Activo</option>
+                    <option value="inactivo">Inactivo</option>
+                </select>
+            </div>
+            <div class="button-group">
+                <button id="agregar_usuario">Agregar Usuario</button>
+            </div>
+        </div>
+
+        <h3>Lista de Usuarios</h3>
+        <div class="user-table-container">
+            <table id="tabla_usuarios">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Rol</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se insertarán los usuarios dinámicamente -->
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>juan.perez@example.com</td>
+                        <td>Administrador</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

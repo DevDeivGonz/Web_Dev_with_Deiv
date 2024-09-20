@@ -24,10 +24,9 @@ body {
 .contenedor {
     width: 420px;
     background: linear-gradient(
-        90deg,
-        rgba(2, 0, 36, 1) 9%,
-        rgba(9, 9, 121, 1) 68%,
-        rgba(0, 91, 255, 1) 97%
+        0deg,
+        #ED414D 25%,
+        #111D6B 97%
     );
     backdrop-filter: blur(9px);
     color: #fff;
